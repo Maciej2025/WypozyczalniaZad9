@@ -3,7 +3,7 @@ server:
 
 spring:
   profiles:
-    active: jdbc
+    active: ${APP_PROFILE:jdbc}
   datasource:
     url: ${DB_URL}
     driver-class-name: org.postgresql.Driver
