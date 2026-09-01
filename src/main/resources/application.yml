@@ -3,9 +3,9 @@ server:
 
 spring:
   profiles:
-    active: jpa
+    active: jdbc
   datasource:
-    url: jdbc:postgresql://ep-noisy-king-b14e9gzn.c-5.eu-central-1.aws.neon.tech/neondb?user=neondb_owner&password=npg_4n1EqbwUjGxM&sslmode=require
+    url: ${DB_URL}
     driver-class-name: org.postgresql.Driver
   jpa:
     hibernate:
