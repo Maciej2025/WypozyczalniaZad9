@@ -1,0 +1,17 @@
+server:
+  port: 8001
+
+spring:
+  profiles:
+    active: jpa
+  datasource:
+    url: jdbc:postgresql://ep-noisy-king-b14e9gzn.c-5.eu-central-1.aws.neon.tech/neondb?user=neondb_owner&password=npg_4n1EqbwUjGxM&sslmode=require
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+        dialect: org.hibernate.dialect.PostgreSQLDialect
